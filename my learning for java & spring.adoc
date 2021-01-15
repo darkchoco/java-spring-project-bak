@@ -1,0 +1,17 @@
+= My Learning for Java & Spring
+:toc:
+
+== javax-servlets
+* https://www.baeldung.com/intro-to-servlets[Introduction to Java Servlets]
+
+=== 일반
+* https://stackoverflow.com/questions/4291545/how-to-properly-put-jsps-in-the-web-inf-folder[How to properly put JSPs in the WEB-INF folder?]
+** ``WEB-INF/jsp`` 내에 넣는다.
+
+=== Tomcat setup on IntelliJ
+* https://mkyong.com/intellij/intellij-idea-run-debug-web-application-on-tomcat/[IntelliJ IDEA – Run / debug web application on Tomcat]
+** https://www.jetbrains.com/help/idea/configuring-and-managing-application-server-integration.html[Integration with application servers] 작업도 꼭 같이 해주어야한다.
+
+=== HttpClient
+* https://mkyong.com/java/apache-httpclient-examples/[Apache HttpClient Examples]
+* https://hc.apache.org/httpcomponents-client-4.5.x/index.html[HttpClient 4.5 Overview]
