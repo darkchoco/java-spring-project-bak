@@ -1,6 +1,21 @@
 = My Learning for Java & Spring
 :toc:
 
+== 구성
+=== Maven
+
+* https://mkyong.com/maven/how-to-create-a-java-project-with-maven/
+* https://maven.apache.org/guides/introduction/introduction-to-archetypes.html
+
+* ``cmd``에서 실행한다. ``PowerShell``에서 사용시 예상치 못한 결과들이 종종 나온다.
+----
+mvn archetype:generate ^
+    -DgroupId=kr.cloudscape.java ^
+    -DartifactId=java-programming ^
+    -DarchetypeArtifactId=maven-archetype-quickstart ^
+    -DinteractiveMode=false
+----
+
 == javax-servlets
 * https://www.baeldung.com/intro-to-servlets[Introduction to Java Servlets]
 
