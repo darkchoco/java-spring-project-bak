@@ -23,8 +23,8 @@ public class CompanyController {
 
     @GetMapping("")
     public List<Company> getAll() {
-//        return companyMapper.getAll();
-        return companyService.getAll();
+        return companyMapper.getAll();
+//        return companyService.getAll();
     }
 
     @GetMapping("/{id}")

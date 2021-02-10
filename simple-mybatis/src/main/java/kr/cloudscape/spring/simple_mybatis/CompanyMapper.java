@@ -15,7 +15,10 @@ public interface CompanyMapper {
     @Select("SELECT * FROM company")
     @Results(id = "CompanyMap", value = {
             @Result(property = "name", column = "company_name"),
-            @Result(property = "address", column = "company_address")
+            @Result(property = "address", column = "company_address"),
+            @Result(property = "employeeList",
+                    column = "id",
+                    many = @Many(select = "kr.cloudscape.spring.simple_mybatis.EmployeeMapper.getByCompanyId"))
     })  // Company의 property 이름과 테이블의 컬럼명이 틀리기 때문에 이렇게 mapping이 필요하다.
     List<Company> getAll();
 
