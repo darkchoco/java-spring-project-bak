@@ -2,6 +2,7 @@ package kr.cloudscape.spring.simple_mybatis;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -22,5 +23,16 @@ public class CompanyService {
         }
 
         return companyList;
+    }
+
+    @Transactional
+    public Company add(Company company) {
+        companyMapper.insert(company);
+
+        // add company into legacy system (가상의)
+        if (true)
+            throw new RuntimeException("Legacy Exception");
+
+        return company;
     }
 }
