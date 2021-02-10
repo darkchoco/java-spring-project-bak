@@ -16,7 +16,7 @@ public class CompanyController {
     private CompanyService companyService;
 
     @PostMapping("")
-    public Company post(@RequestBody Company company) {
+    public Company post(@RequestBody Company company) throws Exception {
 //        companyMapper.insert(company);
         companyService.add(company);
         return company;
