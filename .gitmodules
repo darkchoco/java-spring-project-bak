@@ -1,0 +1,3 @@
+[submodule "thymeleaf-bootstrap-autocomplete-input"]
+	path = thymeleaf-bootstrap-autocomplete-input
+	url = https://github.com/darkchoco-boilerplate/thymeleaf-bootstrap-autocomplete-input.git
