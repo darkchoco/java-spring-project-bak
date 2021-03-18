@@ -1,3 +1,6 @@
 [submodule "thymeleaf-bootstrap-autocomplete-input"]
 	path = thymeleaf-bootstrap-autocomplete-input
 	url = https://github.com/darkchoco-boilerplate/thymeleaf-bootstrap-autocomplete-input.git
+[submodule "spring-boot-calculator"]
+	path = spring-boot-calculator
+	url = git@github.com:darkchoco-boilerplate/spring-boot-calculator.git
