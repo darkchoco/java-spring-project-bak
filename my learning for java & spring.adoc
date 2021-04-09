@@ -1,6 +1,0 @@
-= My Learning for Java & Spring
-
-https://cloudscape.kr/dw/doku.php?id=java_spring:my_learning
-
-GitHub에 push 할 것 아니라면 Wiki에 정리한다. +
-문서 하나로 정리하기에는 좀 복잡하다.
