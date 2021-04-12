@@ -19,9 +19,9 @@ public interface CustomerRepository extends CrudRepository<Customer, Integer> {
 
     List<Customer> findByNameOrAddress(String name, String address);  // OR
 
+    // @Query 내에서는 테이블 명을 대문자로 시작.
     // JPQL과는 틀리게 Customer.primaryContact 를 대상으로 할 때는 아래와 같이 primary_contact로 해야한다.
     @Query(value = "SELECT * FROM customer WHERE name = ?1 AND primary_contact = ?2", nativeQuery = true)
-//    @Query("FROM Customer WHERE name = ?1 AND primaryContact = ?2")  // JPQL.
-                                                                     // @Query 내에서는 테이블 명을 대문자로 시작하기.
+//    @Query("FROM Customer WHERE name = ?1 AND primaryContact = ?2")  // JPQL
     List<Customer> findVipList(String str1, String str2);
 }

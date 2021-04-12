@@ -33,8 +33,8 @@ public class CustomerController {
 
     @GetMapping("/customer")
     public Customer getCustomer(int id) {
-//        return repository.findById(id).orElse(null);
-        return repository.findById(id).orElseThrow();
+//        return repository.findById(id).orElse(null);  // 200 OK
+        return repository.findById(id).orElseThrow();  // 500 Internal Server Error
     }
 
     @GetMapping("/customer/list")
@@ -42,6 +42,9 @@ public class CustomerController {
         return (List<Customer>) repository.findAll();  // iterator return. Casting 필요.
     }
 
+    /**
+     * @return 동명이인이 여럿 있을 수 있으므로 List 리턴.
+     */
     @GetMapping("/customer/name")
     public List<Customer> getCustomer(String name) {
         return repository.findByName(name);

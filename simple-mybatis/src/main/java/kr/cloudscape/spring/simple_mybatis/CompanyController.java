@@ -17,7 +17,8 @@ public class CompanyController {
 
     @PostMapping("")
     public Company post(@RequestBody Company company) throws Exception {
-//        companyMapper.insert(company);
+//        companyMapper.insert(company);  // 단순히 insert 수행하면 insert 한 데이터 갯수 return. insert 한 데이터 전체
+                                          // 를 return 하고 싶으면 CompanyMapper.java의 11번째 라인 주석 참조.
         companyService.add(company);
         return company;
     }
