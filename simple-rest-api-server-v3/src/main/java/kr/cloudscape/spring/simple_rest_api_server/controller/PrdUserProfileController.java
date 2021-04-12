@@ -12,8 +12,8 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@Profile("dev")
-public class UserProfileController {
+@Profile("prd")
+public class PrdUserProfileController {
 
     private Map<String, UserProfile> userMap;
 
@@ -28,7 +28,7 @@ public class UserProfileController {
 
     @GetMapping("/hello")
     public String getHello() {
-        return "[UserProfileController]" + helloMessage + " " + countries + " " + accountMap.get("name") + " " + accountMap.get("password");
+        return "[PrdUserProfileController]" + helloMessage + " " + countries + " " + accountMap.get("name") + " " + accountMap.get("password");
     }
 
     @PostConstruct

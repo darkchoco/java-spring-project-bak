@@ -1,0 +1,6 @@
+server.port: 8080
+hello:
+  message: Hello, this is a test message.
+  countries: 한국,독일,미국,일본
+  account: "{name:'Max', password:'1234'}"
+spring.profiles.active: prd
